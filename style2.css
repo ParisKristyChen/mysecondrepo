@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
+    /* 所有内容都在盒子里 */
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    /* vw=可见宽度 vh=可见高度 column表格按竖排*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +19,7 @@ section {
     max-width: 600px;
     background-color: #f2f2f2;
     padding: 20px;
+    /* 50% 相对于整个页面body来说 padding=间距 border=围墙 margin=房子与房子间的大道 */
 }
 
 input[type=text],
@@ -25,9 +28,9 @@ select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
+    /* 上下8px 左右0 */
     display: inline-block;
     border: 1px solid #ccc;
-    box-sizing: border-box;
 }
 
 input[type=submit] {
@@ -39,5 +42,6 @@ input[type=submit] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    /* border按键submit边框 pointer小手 */
 
 }

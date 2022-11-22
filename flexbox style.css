@@ -8,7 +8,7 @@ html,body {
     width: 100vw;
     height: 100vh;
 }
-
+/* 以上都是设置了整个页面的宽度 */
 
 
 
@@ -16,6 +16,7 @@ html,body {
     height: 100% ;
     display:flex;
     flex-direction: column;
+    /* 主轴按列排，E order：-1在最上面 */
     flex-wrap: wrap;
     justify-content: flex-start;
     justify-content: flex-end;
@@ -26,7 +27,7 @@ html,body {
     /* justify-content: center; */
     /* align-content: center; */
     align-items: center;
-
+/* 谁在最后按谁为主 solid 直线*/
 }
 
 .A,
@@ -56,3 +57,4 @@ html,body {
     order: -1;
     background-color: deeppink;
 }
+/* order只决定前后顺序，默认从0开始左到右，负数排最前但在没有设置class的前提下，还是以class的顺序优先 */

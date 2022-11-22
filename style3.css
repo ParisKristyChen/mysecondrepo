@@ -5,20 +5,23 @@
 div.info {
 
 } */
+/* ul.info li {
+ } 选择所有li */
 
 ul.info>li {
     list-style: none;
-    /* color: aquamarine; */
 }
+    /* color: aquamarine; 颜色有传递性。ul.info 连在一起的表示同层，ul info 中间有空格代表下一层，>表示特指li第一层About Me*/
 
-/* ul.info>li li {
-    list-style: none;
-} */
+
+/* nth-child(1)HTML 从1开始
+ */
 
 ul.info>li li:nth-child(2) {
     list-style: none;
 }
 
+/*文字修饰 没下划线*/
 ol li a {
     text-decoration: none;
 }
@@ -38,7 +41,7 @@ ol li a[href*="google"] {
 
 /* ol li a[href^="https"] {
     color: rgb(44,73,110);
-} */
+}  *=关键字 ^=截取开头部分 $结尾部分 */
 
 ol li a[href$=".com.au"] {
     background-color: rgb(196,125,240);
@@ -47,3 +50,4 @@ ol li a[href$=".com.au"] {
 ol li a[href*="google"][href$=".com.au"] {
     font-style: italic;
 }
+/* 合并一起了，筛选或者，中间用逗号隔开 */
